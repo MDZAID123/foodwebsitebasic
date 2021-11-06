@@ -1,0 +1,252 @@
+/* css reset */
+/* 
+putting that star outside that bracket it means that 
+apply that css block to all */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* how to add smooth scrolling to your websites */
+html{
+    scroll-behavior: smooth;
+}
+
+/* now we will create some variable  for css project 
+css values we might need to save in the block */
+:root{
+    /* inside root bar we will create our css variable 
+    we need to recreate and renovate and innovate 
+    in development
+     */
+     --navbar-height:59px;
+
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+/* 
+diffrent part ki diffe tarah styling hogi 
+fir un sari css ka combined effect we have to collaborate 
+to make it a good  */
+/* 
+navigation bar logo and image */
+#logo{
+    margin: 34px 45px;
+    /* the thing is that how we will set this aftet 
+    giving random number  */
+
+}
+#logo img{
+    
+    height: 59px;
+    margin: 3px 6px;
+
+}
+
+/* navigation bar list styling  */
+ #navbar ul{
+    display: flex;
+    /* flex box */
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top: 0px;
+    left: 0px;
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Bree Serif', serif;
+}
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    /* now i want background strip 
+    not a total background  */
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* now we will add css for the home sections */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    /* code with harry uses psuedo selectors for setting 
+    up background  */
+}
+#home::before{
+    content: "";
+    background: url('https://source.unsplash.com/user/erondu/1600x900');
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.69;
+    top: 2px;
+    /* here we will be setting up a custom height  */
+
+
+    
+    /* zindex -1 se wo sabse pehcke chal jaeg 
+    will not hide the. contet on it  */
+}
+.hprimarycenter{
+    text-align: center;
+    font-size: 70px;
+}
+/* services sections ka css  */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 25px;
+    border-radius: 28px;
+    background-color: #f2f2f2;
+}
+#services .box img{
+    height: 160px ;
+}
+/* client sections */
+#client-section{
+    height: 344px;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* our clients ke baa
+    d walae se4ction ko we want to make flex box 
+    for better look*/
+    /* psedo selectors lagake you can give background image to them  
+    in clients sections */
+}
+#client-section{
+    position: relative;
+}
+
+#clientsection ::before{
+    content: "";
+    position: absolute;
+    /* background: url('Food-Free-Download-PNG.png') no-repeat; */
+    width: 54%;
+    height: 45%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#clients img{
+    height: 100px;
+}
+.clientitems{
+    padding: 34px;
+}
+
+/* contact section */
+/* section by section web page ki css likhenge */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('./contact.jpg') no-repeat center center;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+
+
+/* 
+we need to style the input  form look on our websites  */
+/* 
+we need to style our contact box also 
+design and typography matter for any  websites  */
+#contact-box textarea ,#contact-box input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background-color: black;
+    padding : 10px 20px ;
+    color: white;
+
+}
+
+/* here we will make some utility  class 
+understand the objective first  
+we will write some css in a clss 
+then try to use it throughout  */
+
+.hprimary{
+    font-size: 2.8rem;
+    padding: 12px;
+    /* same tarah ki heading you can ad 
+    at diffrent postion  just by making custom classes  */
+
+}
+.hsecondary{
+    font-size: 3.8rem;
+    pad: 12px;
+}
+.btn{
+    /* buttons ki by defaul padding is verry mess up */
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
